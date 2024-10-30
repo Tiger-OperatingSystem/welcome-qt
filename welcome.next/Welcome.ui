@@ -179,7 +179,7 @@ QListView::item{
        </sizepolicy>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>4</number>
       </property>
       <widget class="QWidget" name="page">
        <layout class="QVBoxLayout" name="verticalLayout_3">
@@ -1156,7 +1156,7 @@ QListView::item{
                 <item>
                  <widget class="QLabel" name="label_69">
                   <property name="text">
-                   <string>Designer Grárico</string>
+                   <string>Designer Gráfico</string>
                   </property>
                   <property name="alignment">
                    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
