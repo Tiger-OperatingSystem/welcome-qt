@@ -57,6 +57,40 @@ Welcome::Welcome(QWidget *parent): QMainWindow(parent), ui(new Ui::Welcome){
 
     // Autostart
     ui->startUp->setChecked(QFile::exists(QStandardPaths::writableLocation(QStandardPaths::ConfigLocation)+"/autostart/tiger-welcome.desktop"));
+
+    if (QFile::exists(QStandardPaths::writableLocation(QStandardPaths::ConfigLocation)+"/tiger-welcome")){
+        QFile inputFile(QStandardPaths::writableLocation(QStandardPaths::ConfigLocation)+"/tiger-welcome");
+        if (inputFile.open(QIODevice::ReadOnly)){
+           QTextStream in(&inputFile);
+           while (!in.atEnd()){
+              QString line = in.readLine().trimmed();
+
+              if (line.startsWith("Mode:")) {
+                  if (line.endsWith("BreezeLight")) {
+                      ui->BreezeLight->click();
+                      continue;
+                  }
+                  ui->BreezeDark->click();
+                  continue;
+              }
+
+              if (line.startsWith("Color:")) {
+                  for (int i = 0; i < ui->colorContainer->layout()->count(); ++i) {
+                      QWidget *widget = ui->colorContainer->layout()->itemAt(i)->widget();
+                      if (QPushButton *button = qobject_cast<QPushButton*>(widget)) {
+                          if (button->property("name").toString()==line.split(":")[1]) {
+                              button->click();
+                              break;
+                          }
+                      }
+                  }
+                  continue;
+              }
+           }
+           inputFile.close();
+           QFile::remove(QStandardPaths::writableLocation(QStandardPaths::ConfigLocation)+"/tiger-welcome");
+        }
+    }
 }
 
 Welcome::~Welcome(){
