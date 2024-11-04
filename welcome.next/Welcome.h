@@ -38,5 +38,6 @@ private:
     void fillOfficePage();
     void fillBrowserPage();
     void fillClassPage();
+    void fillIAPage();
 };
 #endif // WELCOME_H

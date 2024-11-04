@@ -138,6 +138,11 @@ QListView::item{
          </item>
          <item>
           <property name="text">
+           <string>IAs</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
            <string>Sobre</string>
           </property>
           <property name="icon">
@@ -817,6 +822,9 @@ QListView::item{
       </widget>
       <widget class="QWidget" name="page_5">
        <layout class="QGridLayout" name="classContainer"/>
+      </widget>
+      <widget class="QWidget" name="page_6">
+       <layout class="QGridLayout" name="iaContainer"/>
       </widget>
       <widget class="QWidget" name="page_4">
        <layout class="QVBoxLayout" name="verticalLayout_10">

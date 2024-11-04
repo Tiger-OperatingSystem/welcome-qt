@@ -52,6 +52,7 @@ Welcome::Welcome(QWidget *parent): QMainWindow(parent), ui(new Ui::Welcome){
     fillOfficePage();
     fillBrowserPage();
     fillClassPage();
+    fillIAPage();
 
     ui->categories->setCurrentRow(0);
 
@@ -391,6 +392,52 @@ void Welcome::fillOfficePage(){
                         "rm /usr/share/applications/msword-365.desktop"
                         " /usr/share/applications/msexcel-365.desktop"
                         " /usr/share/applications/mspowerpoint-365.desktop"
+                    )),
+      1,0);
+}
+
+void Welcome::fillIAPage(){
+    ui->iaContainer->addWidget(
+                createButton(
+                    "ChatGPT",
+                    ":/Imgs/ias/chatgpt.png",
+                    "/usr/share/applications/chatgpt.desktop",
+                    "://Scripts/chatgpt.sh",
+                    (
+                        "rm /usr/share/applications/chatgpt.desktop"
+                    )),
+      0,0);
+
+    ui->iaContainer->addWidget(
+                createButton(
+                    "Gemini",
+                    ":/Imgs/ias/gemini.png",
+                    "/usr/share/applications/gemini.desktop",
+                    "://Scripts/gemini.sh",
+                    (
+                        "rm /usr/share/applications/gemini.desktop"
+                    )),
+      0,1);
+
+    ui->iaContainer->addWidget(
+                createButton(
+                    "Maritalk",
+                    ":/Imgs/ias/maritalk.png",
+                    "/usr/share/applications/gdocs.desktop",
+                    "://Scripts/maritalk.sh",
+                    (
+                        "rm /usr/share/applications/maritalk.desktop"
+                    )),
+      0,2);
+
+    ui->iaContainer->addWidget(
+                createButton(
+                    "Leonardo AI",
+                    ":/Imgs/ias/leonardo-ai.svg",
+                    "/usr/share/applications/leonardo-ai.desktop",
+                    "://Scripts/leonardo-ai.sh",
+                    (
+                        "rm /usr/share/applications/leonardo-ai.desktop"
                     )),
       1,0);
 }

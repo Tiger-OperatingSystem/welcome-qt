@@ -60,4 +60,10 @@
         <file>Imgs/Aulas/aula4.svg</file>
         <file>Imgs/Aulas/aula5.svg</file>
     </qresource>
+    <qresource prefix="/">
+        <file>Imgs/ias/chatgpt.png</file>
+        <file>Imgs/ias/gemini.png</file>
+        <file>Imgs/ias/leonardo-ai.svg</file>
+        <file>Imgs/ias/maritalk.png</file>
+    </qresource>
 </RCC>
