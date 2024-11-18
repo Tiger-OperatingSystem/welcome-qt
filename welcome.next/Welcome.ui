@@ -140,6 +140,10 @@ QListView::item{
           <property name="text">
            <string>IAs</string>
           </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>Imgs/ias/ai-category.svg</normaloff>Imgs/ias/ai-category.svg</iconset>
+          </property>
          </item>
          <item>
           <property name="text">

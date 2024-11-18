@@ -423,7 +423,7 @@ void Welcome::fillIAPage(){
                 createButton(
                     "Maritalk",
                     ":/Imgs/ias/maritalk.png",
-                    "/usr/share/applications/maritalk.desktop",
+                    "/usr/share/applications/gdocs.desktop",
                     "://Scripts/maritalk.sh",
                     (
                         "rm /usr/share/applications/maritalk.desktop"
