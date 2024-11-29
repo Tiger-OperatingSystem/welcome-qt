@@ -142,7 +142,7 @@ QListView::item{
           </property>
           <property name="icon">
            <iconset>
-            <normaloff>Imgs/ias/ai-category.svg</normaloff>Imgs/ias/ai-category.svg</iconset>
+            <normaloff>:/Imgs/ias/ai-category.svg</normaloff>Imgs/ias/ai-category.svg</iconset>
           </property>
          </item>
          <item>
