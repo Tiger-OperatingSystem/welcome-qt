@@ -141,8 +141,8 @@ QListView::item{
            <string>IAs</string>
           </property>
           <property name="icon">
-           <iconset>
-            <normaloff>:/Imgs/ias/ai-category.svg</normaloff>Imgs/ias/ai-category.svg</iconset>
+           <iconset resource="ImgsResources.qrc">
+            <normaloff>:/Imgs/ias/ai-category.svg</normaloff>:/Imgs/ias/ai-category.svg</iconset>
           </property>
          </item>
          <item>
@@ -188,7 +188,7 @@ QListView::item{
        </sizepolicy>
       </property>
       <property name="currentIndex">
-       <number>4</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="page">
        <layout class="QVBoxLayout" name="verticalLayout_3">
@@ -368,7 +368,7 @@ QListView::item{
            <widget class="QWidget" name="colorContainer" native="true">
             <layout class="QHBoxLayout" name="horizontalLayout_5">
              <item>
-              <spacer name="horizontalSpacer_45">
+              <spacer name="horizontalSpacer">
                <property name="orientation">
                 <enum>Qt::Horizontal</enum>
                </property>
@@ -550,6 +550,51 @@ QListView::item{
                </property>
                <property name="decimal" stdset="0">
                 <string>106,88,255</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_45">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QPushButton" name="color_5">
+               <property name="icon">
+                <iconset resource="ImgsResources.qrc">
+                 <normaloff>:/Imgs/IconesThemeColors/Imgs/IconsThemeColors/folder-blue.png</normaloff>:/Imgs/IconesThemeColors/Imgs/IconsThemeColors/folder-blue.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>50</width>
+                 <height>50</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="autoExclusive">
+                <bool>true</bool>
+               </property>
+               <property name="flat">
+                <bool>false</bool>
+               </property>
+               <property name="hexadecimal" stdset="0">
+                <string>#00557f</string>
+               </property>
+               <property name="name" stdset="0">
+                <string>Blue</string>
+               </property>
+               <property name="decimal" stdset="0">
+                <string>0,85,127</string>
                </property>
               </widget>
              </item>
