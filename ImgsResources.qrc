@@ -1,0 +1,70 @@
+<RCC>
+    <qresource prefix="/Imgs/Avatars">
+        <file>Imgs/avatars/avatar.jpg</file>
+    </qresource>
+    <qresource prefix="/Imgs/Browsers">
+        <file>Imgs/Browsers/brave-browser.svg</file>
+        <file>Imgs/Browsers/brave.png</file>
+        <file>Imgs/Browsers/chrome.png</file>
+        <file>Imgs/Browsers/edge.png</file>
+        <file>Imgs/Browsers/google-chrome.svg</file>
+        <file>Imgs/Browsers/microsoft-edge.svg</file>
+        <file>Imgs/Browsers/opera.png</file>
+        <file>Imgs/Browsers/opera.svg</file>
+        <file>Imgs/Browsers/tor.png</file>
+    </qresource>
+    <qresource prefix="/Imgs/DesktopThemesColors">
+        <file>Imgs/DesktopThemesColors/DesktopDark-1.png</file>
+        <file>Imgs/DesktopThemesColors/DesktopDark.png</file>
+        <file>Imgs/DesktopThemesColors/DesktopLight-1.png</file>
+        <file>Imgs/DesktopThemesColors/DesktopLight.png</file>
+    </qresource>
+    <qresource prefix="/Imgs/IconesThemeColors">
+        <file>Imgs/IconsThemeColors/dolphin.png</file>
+        <file>Imgs/IconsThemeColors/folder-add.png</file>
+        <file>Imgs/IconsThemeColors/folder-bookmarks.png</file>
+        <file>Imgs/IconsThemeColors/folder-cyan.png</file>
+        <file>Imgs/IconsThemeColors/folder-documents.png</file>
+        <file>Imgs/IconsThemeColors/folder.png</file>
+        <file>Imgs/IconsThemeColors/thunarGreen.png</file>
+        <file>Imgs/IconsThemeColors/thunarOrange.png</file>
+        <file>Imgs/IconsThemeColors/thunarPink.png</file>
+        <file>Imgs/IconsThemeColors/thunarPurple.png</file>
+        <file>Imgs/IconsThemeColors/thunarRed.png</file>
+        <file>Imgs/IconsThemeColors/thunarYellow.png</file>
+    </qresource>
+    <qresource prefix="/Imgs/Logos">
+        <file>Imgs/Logos/logo.png</file>
+    </qresource>
+    <qresource prefix="/Imgs/Office">
+        <file>Imgs/Office/asc-de1.svg</file>
+        <file>Imgs/Office/g30.png</file>
+        <file>Imgs/Office/g42.png</file>
+        <file>Imgs/Office/g735.png</file>
+        <file>Imgs/Office/g825.png</file>
+        <file>Imgs/Office/google-docs.svg</file>
+        <file>Imgs/Office/libreoffice-main.svg</file>
+        <file>Imgs/Office/microsoft-365.svg</file>
+        <file>Imgs/Office/wps-office-wpsmain.svg</file>
+    </qresource>
+    <qresource prefix="/Imgs/Sobre">
+        <file>Imgs/sobre/tiger-os-banner_bkp.png</file>
+        <file>Imgs/sobre/tiger-os-banner-50-percent.png</file>
+        <file>Imgs/sobre/tiger-os-banner.png</file>
+    </qresource>
+    <qresource prefix="/Imgs/WebApps"/>
+    <qresource prefix="/Imgs/Aulas">
+        <file>Imgs/Aulas/aula1.svg</file>
+        <file>Imgs/Aulas/aula2.svg</file>
+        <file>Imgs/Aulas/aula3.svg</file>
+        <file>Imgs/Aulas/aula4.svg</file>
+        <file>Imgs/Aulas/aula5.svg</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>Imgs/ias/chatgpt.png</file>
+        <file>Imgs/ias/gemini.png</file>
+        <file>Imgs/ias/leonardo-ai.svg</file>
+        <file>Imgs/ias/maritalk.png</file>
+        <file>Imgs/ias/ai-category.svg</file>
+    </qresource>
+</RCC>

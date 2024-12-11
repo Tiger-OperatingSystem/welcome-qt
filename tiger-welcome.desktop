@@ -1,0 +1,10 @@
+[Desktop Entry]
+Exec=welcome-next
+Icon=/usr/share/pixmaps/tiger-welcome.png
+Type=Application
+Categories=Qt;Utility;
+Name=Comece aqui
+Terminal=false
+InitialPreference=10
+X-KDE-Shortcuts=Meta+F
+StartupWMClass=welcome.next

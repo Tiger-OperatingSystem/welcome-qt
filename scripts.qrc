@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Scripts/debian-package.sh</file>
+        <file>Scripts/googledocs.sh</file>
+        <file>Scripts/office365.sh</file>
+        <file>Scripts/chatgpt.sh</file>
+        <file>Scripts/gemini.sh</file>
+        <file>Scripts/leonardo-ai.sh</file>
+        <file>Scripts/maritalk.sh</file>
+    </qresource>
+</RCC>
