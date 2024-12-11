@@ -1,0 +1,26 @@
+name: Build and Release
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+  workflow_dispatch:
+
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Build and Release
+      run: |
+           sudo -E bash build.sh
+           wget -c https://github.com/probonopd/uploadtool/raw/master/upload.sh
+           bash upload.sh ./*.deb* welcome-next
