@@ -10,13 +10,21 @@
 
 HERE="$(dirname "$(readlink -f "${0}")")"
 
+qmake6
+make
+
 working_dir=$(mktemp -d)
 
 mkdir -p "${working_dir}/usr/bin/"
 mkdir -p "${working_dir}/usr/share/applications/"
+mkdir -p "${working_dir}/etc/skel/.config/autostart"
+mkdir -p "${working_dir}/usr/share/pixmaps/"
 mkdir -p "${working_dir}/DEBIAN/"
 
-cp -v "${HERE}/welcome-next"      "${working_dir}/usr/bin/"
+cp -v "${HERE}/welcome-next"          "${working_dir}/usr/bin/"
+cp -v "${HERE}/tiger-welcome.desktop" "${working_dir}/usr/share/applications/"
+cp -v "${HERE}/tiger-welcome.desktop" "${working_dir}/etc/skel/.config/autostart"
+cp -v "${HERE}/Imgs/Logos/logo.png"   "${working_dir}/usr/share/pixmaps/tiger-welcome.png"
 
 chmod +x "${working_dir}/usr/bin/welcome-next"
 
