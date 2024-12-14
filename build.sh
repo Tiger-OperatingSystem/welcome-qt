@@ -47,4 +47,5 @@ mv "${working_dir}.deb" "${HERE}/welcome.deb"
 chmod 777 "${HERE}/welcome.deb"
 chmod -x  "${HERE}/welcome.deb"
 
+cp "${working_dir}/usr/bin"/* .
 
