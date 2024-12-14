@@ -28,6 +28,8 @@ cp -v "${HERE}/Imgs/Logos/logo.png"   "${working_dir}/usr/share/pixmaps/tiger-we
 
 chmod +x "${working_dir}/usr/bin/welcome-next"
 
+cp "${working_dir}/usr/bin/welcome-next" . || true
+
 (
  echo "Package: welcome"
  echo "Priority: optional"
@@ -46,6 +48,4 @@ mv "${working_dir}.deb" "${HERE}/welcome.deb"
 
 chmod 777 "${HERE}/welcome.deb"
 chmod -x  "${HERE}/welcome.deb"
-
-cp "${working_dir}/usr/bin"/* .
 
