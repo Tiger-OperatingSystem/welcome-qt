@@ -8,6 +8,8 @@
   exit 1
 }
 
+apt install qt6-base-dev build-essential libqt6svg6-dev -y
+
 HERE="$(dirname "$(readlink -f "${0}")")"
 
 qmake6
