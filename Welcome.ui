@@ -19,6 +19,10 @@
   <property name="windowTitle">
    <string>Boas-vindas!</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="ImgsResources.qrc">
+    <normaloff>:/Imgs/Logos/Imgs/Logos/logo.png</normaloff>:/Imgs/Logos/Imgs/Logos/logo.png</iconset>
+  </property>
   <property name="styleSheet">
    <string notr="true"/>
   </property>
