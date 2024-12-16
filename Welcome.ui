@@ -1445,14 +1445,14 @@ QListView::item{
                    </font>
                   </property>
                   <property name="text">
-                   <string>Julio Caio</string>
+                   <string>Rogerio Souza Santos</string>
                   </property>
                  </widget>
                 </item>
                 <item>
                  <widget class="QLabel" name="label_79">
                   <property name="text">
-                   <string>Microfone</string>
+                   <string/>
                   </property>
                   <property name="alignment">
                    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
@@ -1580,14 +1580,14 @@ QListView::item{
                    </font>
                   </property>
                   <property name="text">
-                   <string>Denis Corcini</string>
+                   <string>Klaibson Ribeiro</string>
                   </property>
                  </widget>
                 </item>
                 <item>
                  <widget class="QLabel" name="label_77">
                   <property name="text">
-                   <string>Padrim</string>
+                   <string/>
                   </property>
                   <property name="alignment">
                    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
@@ -1620,14 +1620,14 @@ QListView::item{
                    </font>
                   </property>
                   <property name="text">
-                   <string>Elton</string>
+                   <string>Vitor Gabriel Costa da Silva</string>
                   </property>
                  </widget>
                 </item>
                 <item>
                  <widget class="QLabel" name="label_81">
                   <property name="text">
-                   <string>Versões antigas do Welcome</string>
+                   <string/>
                   </property>
                   <property name="alignment">
                    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
@@ -1647,14 +1647,14 @@ QListView::item{
                    </font>
                   </property>
                   <property name="text">
-                   <string>Rodrigo Chile</string>
+                   <string>Jonatan - Linux Expert</string>
                   </property>
                  </widget>
                 </item>
                 <item>
                  <widget class="QLabel" name="label_75">
                   <property name="text">
-                   <string>Wallpapers</string>
+                   <string/>
                   </property>
                   <property name="alignment">
                    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
