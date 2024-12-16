@@ -50,12 +50,16 @@ Depends:
 Description: Tela inicial com recursos iterativos
 EOF
 
-# Cria o pacote DEB manualmente
+# Cria os arquivos necessários
 cd "${working_dir}" || exit 1
 
-# Cria os arquivos necessários
+# Cria debian-binary
 echo "2.0" > debian-binary
-tar --xz -cf control.tar.xz DEBIAN
+
+# Compacta o conteúdo do diretório DEBIAN/ (não o diretório em si)
+tar --xz -cf control.tar.xz -C DEBIAN .
+
+# Compacta os arquivos do pacote (usr/ e etc/)
 tar --xz -cf data.tar.xz usr etc
 
 # Monta o pacote .deb
