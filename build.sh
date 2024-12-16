@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# Verifica se o script está sendo executado como root
 [ ! "${EUID}" = "0" ] && {
   echo "Execute esse script como root:"
   echo
@@ -8,46 +9,61 @@
   exit 1
 }
 
+# Instala as dependências necessárias para compilar o projeto
 apt install qt6-base-dev build-essential libqt6svg6-dev -y
 
+# Diretório do script atual
 HERE="$(dirname "$(readlink -f "${0}")")"
 
+# Compila o projeto
 qmake6
 make
 
+# Cria um diretório temporário de trabalho
 working_dir=$(mktemp -d)
 
+# Cria a estrutura do pacote
 mkdir -p "${working_dir}/usr/bin/"
 mkdir -p "${working_dir}/usr/share/applications/"
 mkdir -p "${working_dir}/etc/skel/.config/autostart"
 mkdir -p "${working_dir}/usr/share/pixmaps/"
 mkdir -p "${working_dir}/DEBIAN/"
 
+# Copia os arquivos necessários
 cp -v "${HERE}/welcome-next"          "${working_dir}/usr/bin/"
 cp -v "${HERE}/tiger-welcome.desktop" "${working_dir}/usr/share/applications/"
 cp -v "${HERE}/tiger-welcome.desktop" "${working_dir}/etc/skel/.config/autostart"
 cp -v "${HERE}/Imgs/Logos/logo.png"   "${working_dir}/usr/share/pixmaps/tiger-welcome.png"
 
+# Ajusta permissões
 chmod +x "${working_dir}/usr/bin/welcome-next"
 
-cp "${working_dir}/usr/bin/welcome-next" . || true
+# Cria o arquivo de controle do pacote
+cat <<EOF > "${working_dir}/DEBIAN/control"
+Package: welcome
+Priority: optional
+Version: $(date +%y.%m.%d%H%M%S)
+Architecture: all
+Maintainer: Natanael Barbosa Santos
+Depends: 
+Description: Tela inicial com recursos iterativos
+EOF
 
-(
- echo "Package: welcome"
- echo "Priority: optional"
- echo "Version: $(date +%y.%m.%d%H%M%S)"
- echo "Architecture: all"
- echo "Maintainer: Natanael Barbosa Santos"
- echo "Depends: "
- echo "Description: Tela inicial com recursos iterativos"
- echo
-) > "${working_dir}/DEBIAN/control"
+# Cria o pacote DEB manualmente
+cd "${working_dir}" || exit 1
 
-dpkg -b ${working_dir}
-rm -rfv ${working_dir}
+# Cria os arquivos necessários
+echo "2.0" > debian-binary
+tar --xz -cf control.tar.xz DEBIAN
+tar --xz -cf data.tar.xz usr etc
 
-mv "${working_dir}.deb" "${HERE}/welcome.deb"
+# Monta o pacote .deb
+ar rcs "${HERE}/welcome.deb" debian-binary control.tar.xz data.tar.xz
 
+# Limpa os arquivos temporários
+cd "${HERE}" || exit 1
+rm -rfv "${working_dir}"
+
+# Ajusta permissões do pacote final
 chmod 777 "${HERE}/welcome.deb"
 chmod -x  "${HERE}/welcome.deb"
-
