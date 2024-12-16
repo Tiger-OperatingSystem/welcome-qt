@@ -10,6 +10,7 @@
 }
 
 # Instala as dependências necessárias para compilar o projeto
+apt update
 apt install qt6-base-dev build-essential libqt6svg6-dev -y
 
 # Diretório do script atual
