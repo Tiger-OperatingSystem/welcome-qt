@@ -33,6 +33,7 @@
         <file>Imgs/IconsThemeColors/thunarRed.png</file>
         <file>Imgs/IconsThemeColors/thunarYellow.png</file>
         <file>Imgs/IconsThemeColors/folder-blue.png</file>
+        <file>Imgs/IconsThemeColors/lime.png</file>
     </qresource>
     <qresource prefix="/Imgs/Logos">
         <file>Imgs/Logos/logo.png</file>
