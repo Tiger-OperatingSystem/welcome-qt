@@ -639,7 +639,7 @@ QListView::item{
                <property name="hexadecimal" stdset="0">
                 <string>#82b805</string>
                </property>
-               <property name="Name" stdset="0">
+               <property name="name" stdset="0">
                 <string>Lima</string>
                </property>
                <property name="decimal" stdset="0">
