@@ -640,7 +640,7 @@ QListView::item{
                 <string>#82b805</string>
                </property>
                <property name="Name" stdset="0">
-                <string>Lime</string>
+                <string>Lima</string>
                </property>
                <property name="decimal" stdset="0">
                 <string>130,184,5</string>
