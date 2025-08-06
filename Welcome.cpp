@@ -487,6 +487,15 @@ void Welcome::fillBrowserPage(){
 
     ui->browserContainer->addWidget(
                 createButton(
+                    "LibreWolf",
+                    ":/Imgs/Browsers/Imgs/Browsers/librewolf.png",
+                    "flatpak info org.torproject.torbrowser-launcher",
+                    "flatpak-install-gui --override-appname=\"LibreWolf\" io.gitlab.librewolf-community",
+                    "flatpak-install-gui --override-appname=\"LibreWolf\" --remove io.gitlab.librewolf-community"),
+      1,1);
+
+    ui->browserContainer->addWidget(
+                createButton(
                     "Opera",
                     ":/Imgs/Browsers/Imgs/Browsers/opera.png",
                     "which opera",
