@@ -384,7 +384,7 @@ void Welcome::fillOfficePage(){
 
     ui->officeContainer->addWidget(
                 createButton(
-                    "Office 365",
+                    "Office 365 Online",
                     ":/Imgs/Office/Imgs/Office/g825.png",
                     "/usr/share/applications/msword-365.desktop",
                     "://Scripts/office365.sh",
