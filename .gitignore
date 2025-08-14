@@ -1,0 +1,102 @@
+# ============================
+# Qt / Qt Creator
+# ============================
+
+# Arquivos de configuração específicos do usuário
+*.pro.user
+*.pro.user.*
+*.qbs.user
+*.qbs.user.*
+*.qmlproject.user
+*.qmlproject.user.*
+
+# Cache e arquivos temporários
+.qmake.stash
+*.autosave
+*.qmlc
+*.jsc
+*.moc
+moc_*.cpp
+moc_*.h
+qrc_*.cpp
+ui_*.h
+*.qrc.dep
+
+# Diretórios de build do Qt Creator
+build*/
+*/build-*/
+
+# ============================
+# CMake
+# ============================
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+Testing/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+
+# ============================
+# Ninja
+# ============================
+.ninja_deps
+.ninja_log
+
+# ============================
+# Compilação
+# ============================
+*.o
+*.obj
+*.lo
+*.la
+*.al
+*.libs
+*.ko
+*.dll
+*.so
+*.so.*
+*.dylib
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# ============================
+# Debug / Perfil
+# ============================
+*.dSYM/
+*.su
+*.idb
+*.pdb
+*.mod
+*.cmd
+*.bld
+*.dep
+*.gcno
+*.gcda
+*.gcov
+*.prof
+*.pgc
+*.pgd
+
+# Editor temporários
+*~
+*.swp
+*.swo
+*.tmp
+*.bak
+*.orig
+*.rej
+
+# ============================
+# Outros
+# ============================
+*.log
+*.trace
+
