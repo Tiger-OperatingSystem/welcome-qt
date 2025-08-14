@@ -6,7 +6,7 @@ echo "#!/usr/bin/env xdg-open
 Version=1.0
 Terminal=false
 Type=Application
-Name=Microsoft Office Word 356
+Name=Microsoft Office Word 365
 Exec=/usr/local/bin/${fname}
 Categories=Office;
 StartupWMClass=${url}
@@ -26,7 +26,7 @@ echo "#!/usr/bin/env xdg-open
 Version=1.0
 Terminal=false
 Type=Application
-Name=Microsoft Office Excel 356
+Name=Microsoft Office Excel 365
 Exec=/usr/local/bin/${fname}
 Categories=Office;
 StartupWMClass=${url}
