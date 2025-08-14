@@ -384,7 +384,7 @@ void Welcome::fillOfficePage(){
 
     ui->officeContainer->addWidget(
                 createButton(
-                    "Office 365",
+                    "Office 365 Online",
                     ":/Imgs/Office/Imgs/Office/g825.png",
                     "/usr/share/applications/msword-365.desktop",
                     "://Scripts/office365.sh",
@@ -484,6 +484,15 @@ void Welcome::fillBrowserPage(){
                     ),
                     "qapt-batch --uninstall brave-browser"),
       0,2);
+
+    ui->browserContainer->addWidget(
+                createButton(
+                    "LibreWolf",
+                    ":/Imgs/Browsers/Imgs/Browsers/librewolf.png",
+                    "flatpak info org.torproject.torbrowser-launcher",
+                    "flatpak-install-gui --override-appname=\"LibreWolf\" io.gitlab.librewolf-community",
+                    "flatpak-install-gui --override-appname=\"LibreWolf\" --remove io.gitlab.librewolf-community"),
+      1,1);
 
     ui->browserContainer->addWidget(
                 createButton(
