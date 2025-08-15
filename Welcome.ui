@@ -810,7 +810,7 @@ QListView::item{
                 </font>
                </property>
                <property name="text">
-                <string>Instalar antivírus</string>
+                <string>Instalar Clam Antivírus</string>
                </property>
                <property name="executable" stdset="0">
                 <string>pkexec</string>
